@@ -19,7 +19,7 @@ function ProductInfo({
     <div
       className="product-info"
       style={{
-        backgroundImage: `url(src/assets/${imageName}.jpg)`,
+        backgroundImage: `url(assets/${imageName}.jpg)`,
       }}
     >
       <div className="product-info-text">

@@ -8,7 +8,7 @@ function SpecialPromo() {
       <div
         className="special-promo-card"
         style={{
-          backgroundImage: "url(src/assets/broadband.jpg)",
+          backgroundImage: "url(assets/broadband.jpg)",
         }}
       >
         <div className="special-promo-card-text">
@@ -26,7 +26,7 @@ function SpecialPromo() {
       <div
         className="special-promo-card"
         style={{
-          backgroundImage: "url(src/assets/phone-wall.jpg)",
+          backgroundImage: "url(assets/phone-wall.jpg)",
         }}
       >
         <div className="special-promo-card-text">

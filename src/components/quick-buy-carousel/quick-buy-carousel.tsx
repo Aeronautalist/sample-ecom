@@ -78,7 +78,7 @@ function QuickBuyCarousel() {
               <SlCard className="quick-buy-carousel-card">
                 <img
                   slot="image"
-                  src="src/assets/phone-generic.jpg"
+                  src="assets/phone-generic.jpg"
                   alt="A generic smart phone"
                   style={{ filter: `${applyFilter(i)}` }}
                 />
