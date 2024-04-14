@@ -1,0 +1,31 @@
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px -5px gray;
+  height: var(--sl-spacing-3x-large, 3rem);
+  padding-top: var(--sl-spacing-medium, 1rem);
+  padding-bottom: var(--sl-spacing-medium, 1rem);
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+  }
+}
+
+.banner-icon {
+  font-size: var(--sl-spacing-3x-large, 3rem);
+  padding-left: var(--sl-spacing-medium, 1rem);
+  padding-right: var(--sl-spacing-medium, 1rem);
+}
+
+.banner-holder {
+  display: flex;
+  align-items: center;
+  gap: var(--sl-spacing-x-large, 1.75rem);
+  padding-right: var(--sl-spacing-medium, 1rem);
+}

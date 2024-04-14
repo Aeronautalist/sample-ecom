@@ -1,0 +1,48 @@
+.promo {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(235, 228, 228, 0.829),
+    rgb(195, 253, 195),
+    rgb(251, 191, 191),
+    rgba(235, 228, 228, 0.829),
+    rgb(253, 252, 195),
+    rgba(235, 228, 228, 0.829),
+    rgb(177, 177, 251),
+    rgba(235, 228, 228, 0.829)
+  );
+  height: var(--sl-spacing-3x-large, 3rem);
+  padding-top: var(--sl-spacing-medium, 1rem);
+  padding-bottom: var(--sl-spacing-medium, 1rem);
+  justify-items: center;
+  align-items: center;
+}
+
+.promo-text {
+  padding-left: 20%;
+}
+
+sl-button.promo-button::part(base) {
+  font-weight: bold;
+  color: var(--sl-color-neutral-0, white);
+  border-color: var(--sl-color-neutral-1000, black);
+  border-width: var(--sl-spacing-2x-small, 4px);
+
+  background: linear-gradient(
+    var(--sl-color-neutral-1000, black),
+    var(--sl-color-neutral-1000, black)
+  );
+  background-size: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+sl-button.promo-button::part(base):hover {
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--sl-color-neutral-1000, black);
+  background-size: 0%;
+}

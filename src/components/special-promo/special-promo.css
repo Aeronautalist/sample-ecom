@@ -1,0 +1,40 @@
+#special-promo {
+  display: grid;
+  width: 90%;
+  height: 100%;
+  margin: var(--sl-spacing-medium, 1rem) auto;
+  gap: var(--sl-spacing-medium, 1rem);
+  grid-template-columns: 50% 50%;
+  max-height: 700px;
+}
+
+.special-promo-card {
+  box-shadow: 0 10px 30px -5px gray;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.special-promo-card-text {
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--sl-spacing-4x-large, 4.5rem);
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  sl-button {
+    margin-top: var(--sl-spacing-medium, 1rem);
+    width: 10%;
+    min-width: 90px;
+  }
+}

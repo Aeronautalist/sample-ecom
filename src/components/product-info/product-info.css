@@ -1,0 +1,27 @@
+.product-info {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-info-text {
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: var(--sl-spacing-4x-large, 4.5rem);
+
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+
+.product-info-button {
+  width: 100px;
+  margin-top: var(--sl-spacing-large, 1.25rem);
+}

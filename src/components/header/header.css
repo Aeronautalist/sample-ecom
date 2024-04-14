@@ -1,0 +1,31 @@
+#header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sl-spacing-2x-large, 2.25rem);
+}
+
+.app-banner-icon:hover {
+  cursor: pointer;
+}
+
+sl-button.app-banner-button::part(base) {
+  font-weight: bold;
+  border-color: var(--sl-color-pink-500, pink);
+  border-width: var(--sl-spacing-2x-small, 4px);
+
+  background: linear-gradient(
+    var(--sl-color-pink-500, pink),
+    var(--sl-color-pink-500, pink)
+  );
+  background-size: 0%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+sl-button.app-banner-button::part(base):hover {
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--sl-color-neutral-0, white);
+  background-size: 100%;
+}

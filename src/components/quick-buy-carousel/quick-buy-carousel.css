@@ -1,0 +1,46 @@
+#quick-buy-carousel {
+  height: 100%;
+  max-height: 450px;
+}
+
+.quick-buy-carousel-slcarousel {
+  height: 100%;
+}
+
+.quick-buy-carousel-item {
+  height: 100%;
+}
+
+.old-price {
+  display: inline;
+  padding-left: var(--sl-spacing-x-small, 0.5rem);
+  text-decoration: line-through;
+  color: var(--sl-color-neutral-400, grey);
+}
+
+.quick-buy-carousel-button {
+  margin-top: var(--sl-spacing-x-small, 0.5rem);
+  width: 100%;
+}
+
+sl-button.quick-buy-carousel-button::part(base) {
+  font-weight: bold;
+  border-color: var(--sl-color-pink-500, pink);
+  border-width: var(--sl-spacing-2x-small, 4px);
+  color: black;
+  background: linear-gradient(
+    var(--sl-color-pink-500, pink),
+    var(--sl-color-pink-500, pink)
+  );
+  background-size: 0%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+sl-button.quick-buy-carousel-button::part(base):hover {
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--sl-color-neutral-0, white);
+  background-size: 100%;
+}

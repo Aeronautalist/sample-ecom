@@ -1,0 +1,29 @@
+#action-cards {
+  margin: var(--sl-spacing-medium, 1rem) auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--sl-spacing-small, 0.75rem);
+}
+
+.action-card {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px -5px gray;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  transition: transform 0.3s;
+}
+
+.action-card:hover {
+  cursor: pointer;
+  transform: translate(0, -8px);
+}
+
+.action-card-icon {
+  font-size: 48px;
+}

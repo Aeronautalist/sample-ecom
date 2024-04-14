@@ -1,0 +1,38 @@
+sl-button.custom-dropdown-button::part(base) {
+  font-weight: bold;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+
+  background-image: linear-gradient(
+    var(--sl-color-purple-500, purple),
+    var(--sl-color-purple-500, purple)
+  );
+  background-size: 0% 2px;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+sl-button.custom-dropdown-button::part(base):hover {
+  background-color: transparent;
+  color: var(--sl-color-neutral-700, black);
+  background-size: 100% 2px;
+}
+
+sl-button.custom-dropdown-button::part(label) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+sl-button.custom-dropdown-button::part(caret) {
+  color: var(--sl-color-purple-500, purple);
+  padding-left: var(--sl-spacing-x-small, 8px);
+}
+
+sl-button.custom-dropdown-button.open::part(caret) {
+  transform: rotate(180deg);
+  padding-right: var(--sl-spacing-x-small, 8px);
+  padding-left: 0;
+}

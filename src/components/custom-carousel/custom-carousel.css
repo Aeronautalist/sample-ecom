@@ -1,0 +1,26 @@
+#custom-carousel {
+  margin-top: var(--sl-spacing-medium, 1rem);
+  margin-bottom: var(--sl-spacing-medium, 1rem);
+}
+
+sl-carousel.custom-carousel-slcarousel {
+  max-height: 500px;
+}
+
+sl-carousel.custom-carousel-slcarousel::part(base) {
+  gap: 0;
+}
+
+sl-carousel.custom-carousel-slcarousel::part(navigation-button) {
+  position: absolute;
+  color: var(--sl-color-neutral-0, white);
+  font-weight: bold;
+}
+
+sl-carousel.custom-carousel-slcarousel::part(navigation-button--next) {
+  right: 12px;
+}
+
+sl-carousel-item {
+  padding-bottom: var(--sl-spacing-x-small, 0.5rem);
+}
